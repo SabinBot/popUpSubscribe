@@ -85,13 +85,7 @@
     <script>
 
         function manipulareSubscribe () {
-            // versiunea 1
         const container = document.querySelector('.container');
-        // const propozitie = 'Congratulations for your subscription! You won`t be sorry for your decision.' // h2 pot sa imiau cu h2 sa imi stilizez propozitia h2
-        // container.innerHTML = propozitie;
-            // console.log('subscribe') ca sa vedem daca e legata functia de html
-
-            // versiunea 2
             container.innerHTML = '';
             const titlu = document.createElement('h2');
             titlu.textContent = 'Congratulations for your subscription!';
@@ -101,19 +95,8 @@
 
         function manipulareNoThanks () {
             const container = document.querySelector('.container');
-
-            //varianta 1 
-            // container.style.display = 'none';
-    
-            //varianta 2
-
             const body = document.querySelector('body')
-
-            body.removeChild(container);
-            
-
-
-            // console.log('noThanks')
+            body.removeChild(container);  
         }
 
     </script>
